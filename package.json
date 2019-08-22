@@ -11,5 +11,14 @@
     "test": "mocha -t 10000"
   },
   "author": "pikachu",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^6.2.1",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "mocha": "^6.2.0"
+  }
 }
