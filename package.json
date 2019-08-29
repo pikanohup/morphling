@@ -20,5 +20,8 @@
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-vue": "^5.2.3",
     "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "puppeteer": "^1.19.0"
   }
 }
