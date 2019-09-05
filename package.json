@@ -19,7 +19,8 @@
     "eslint-config-vue": "^2.0.2",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-vue": "^5.2.3",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "testdouble": "^3.12.4"
   },
   "dependencies": {
     "puppeteer": "^1.19.0"
