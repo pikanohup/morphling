@@ -18,6 +18,7 @@
     "eslint": "^6.2.1",
     "eslint-config-vue": "^2.0.2",
     "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-mocha": "^6.1.0",
     "eslint-plugin-vue": "^5.2.3",
     "mocha": "^6.2.0",
     "testdouble": "^3.12.4"

@@ -2,5 +2,21 @@
   "extends": "vue",
   "parserOptions": {
     "ecmaVersion": 2017
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.js"
+      ],
+      "env": {
+        "mocha": true
+      },
+      "plugins": [
+        "mocha"
+      ],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ]
 }

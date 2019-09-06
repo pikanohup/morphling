@@ -76,7 +76,4 @@ typings/
 .fusebox/
 
 # DynamoDB
-.dynamodb/ 
-
-# Local files 
-/.vscode
+.dynamodb/
