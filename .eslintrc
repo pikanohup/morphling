@@ -14,8 +14,8 @@
       "plugins": [
         "mocha"
       ],
-      "rules": {
-        "no-undef": "off"
+      "globals": {
+        "td": true
       }
     }
   ]
