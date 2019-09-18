@@ -24,7 +24,7 @@
     "testdouble": "^3.12.4"
   },
   "dependencies": {
-    "multimap": "^1.0.2",
+    "generic-pool": "^3.7.1",
     "puppeteer": "^1.19.0"
   }
 }
