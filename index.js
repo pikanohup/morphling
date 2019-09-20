@@ -1,3 +1,9 @@
-const { Runner } = require('./lib/runner')
+const { DriverPool, layerTask } = require('./lib/morphling')
 
-const runner = new Runner('http://example.com')
+;(async () => {
+  const driverPool = await new DriverPool()
+  // TODO
+  driverPool.queue(layerTask, 'http://baidu.com')
+  driverPool.queue(layerTask, 'http://jd.com')
+  await driverPool.clear()
+})()
