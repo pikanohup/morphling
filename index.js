@@ -1,9 +1,9 @@
-const { DriverPool, layerTask } = require('./lib/morphling')
+const { DriverPool, getLayersTask } = require('./lib/morphling')
 
 ;(async () => {
   const driverPool = await new DriverPool()
   // TODO
-  driverPool.queue(layerTask, 'http://baidu.com')
-  driverPool.queue(layerTask, 'http://jd.com')
+  driverPool.queue(getLayersTask, './test/resources/get-layers.html')
+  // driverPool.queue(getLayersTask, 'http://jd.com')
   await driverPool.clear()
 })()
