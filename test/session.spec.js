@@ -42,15 +42,13 @@ describe('class Session', () => {
   it('should describe events', async () => {
     setTimeout(() =>
       cdp.emit('LayerTree.layerTreeDidChange', {
-        parmas: {
-          layers: [
-            { layerId: 'number', backendNodeId: 'number', offsetX: 0, offsetY: 0 },
-            { layerId: 'number', offsetX: 10, offsetY: 10, drawsContent: true }
-          ]
-        }
+        layers: [
+          { layerId: 'number', backendNodeId: 'number', offsetX: 0, offsetY: 0 },
+          { layerId: 'number', offsetX: 10, offsetY: 10, drawsContent: true }
+        ]
       }), 1000)
 
-    const layers = (await dp.LayerTree.onceLayerTreeDidChange()).parmas.layers
+    const layers = (await dp.LayerTree.onceLayerTreeDidChange()).layers
     layers.length.should.be.equal(2)
     layers[0].offsetX.should.be.equal(0)
   })
